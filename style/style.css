@@ -26,12 +26,16 @@
     width: 60%;
 }
 
+.bg-gray {
+    background-color: lightgrey;
+}
+
 /* Generics */
 
 /* Debug */
 .debug {
     * {
-        border: 2px dashed red;
+        border: 2px dashed black;
     }
 
     #main-header {
@@ -44,14 +48,28 @@
     }
 
     .banner-section {
-        background-color: blue;
+        background-color: darkblue;
         min-height: 500px;
     }
 
     .container-sm {
-        background-color: pink;
+        background-color: plum;
         margin: 0 auto;
         height: 400px;
+    }
+
+    .image-first-section {
+        min-height: 500px;
+    }
+
+    .image-container {
+        height: 400px;
+        background-color: dodgerblue;
+    }
+
+    .text-container {
+        height: 400px;
+        background-color: pink;
     }
 }
 
@@ -74,5 +92,19 @@
 
     .banner-content {
         width: 80%;
+    }
+}
+
+.image-first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .image-container {
+        width: 60%;
+    }
+
+    .text-container {
+        width: 40%;
     }
 }
