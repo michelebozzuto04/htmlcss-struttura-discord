@@ -58,7 +58,7 @@
         height: 400px;
     }
 
-    .image-first-section {
+    .image-text-section {
         min-height: 500px;
     }
 
@@ -95,7 +95,7 @@
     }
 }
 
-.image-first-section {
+.image-text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,5 +106,13 @@
 
     .text-container {
         width: 40%;
+    }
+
+    &:nth-child(odd) {
+        background-color: lightgrey;
+
+        .image-container {
+            order: 2;
+        }
     }
 }
