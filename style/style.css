@@ -12,6 +12,12 @@
     margin: 0 auto;
 }
 
+.container-sm {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+
 .w-20 {
     width: 20%;
 }
@@ -30,11 +36,22 @@
 
     #main-header {
         background-color: aqua;
+        min-height: 70px;
     }
 
     .header-content {
         background-color: gold;
-        padding: 5px;
+    }
+
+    .banner-section {
+        background-color: blue;
+        min-height: 500px;
+    }
+
+    .container-sm {
+        background-color: pink;
+        margin: 0 auto;
+        height: 400px;
     }
 }
 
@@ -44,9 +61,18 @@
     flex-direction: column;
     justify-content: center;
 
-    min-height: 70px;
-
     .header-content {
         text-align: center;
+        padding: 5px;
+    }
+}
+
+/* Main Content */
+.banner-section {
+    display: flex;
+    align-items: center;
+
+    .banner-content {
+        width: 80%;
     }
 }
