@@ -30,8 +30,6 @@
     background-color: lightgrey;
 }
 
-/* Generics */
-
 /* Debug */
 .debug {
     * {
@@ -79,6 +77,31 @@
     .center-image-section-content {
         height: 600px;
         background-color: forestgreen;
+    }
+
+    .link-menu-section {
+        min-height: 500px;
+    }
+
+    footer {
+        background-color: darkslategrey;
+
+        .top-footer {
+            min-height: 500px;
+
+            .top-left-footer {
+                height: 450px;
+                background-color: salmon;
+            }
+
+            .top-right-footer {
+                background-color: darkturquoise;
+            }
+        }
+
+        .bottom-footer {
+            min-height: 100px;
+        }
     }
 }
 
@@ -133,5 +156,23 @@
 
     .center-image-section-content {
         width: 100%;
+    }
+}
+
+.top-footer {
+    display: flex;
+    align-items: center;
+
+    .top-left-footer {
+        width: 25%;
+    }
+
+    .top-right-footer {
+        display: flex;
+        width: 75%;
+
+        .top-right-footer-content {
+            width: 25%;
+        }
     }
 }
