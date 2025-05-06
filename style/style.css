@@ -71,6 +71,15 @@
         height: 400px;
         background-color: pink;
     }
+
+    .center-image-section {
+        min-height: 700px;
+    }
+
+    .center-image-section-content {
+        height: 600px;
+        background-color: forestgreen;
+    }
 }
 
 /* Header */
@@ -114,5 +123,15 @@
         .image-container {
             order: 2;
         }
+    }
+}
+
+.center-image-section {
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+
+    .center-image-section-content {
+        width: 100%;
     }
 }
