@@ -84,10 +84,11 @@
     }
 
     footer {
-        background-color: darkslategrey;
+        background-color: black;
 
         .top-footer {
             min-height: 500px;
+            margin-top: 5px;
 
             .top-left-footer {
                 height: 450px;
@@ -101,6 +102,16 @@
 
         .bottom-footer {
             min-height: 100px;
+            margin-top: 10px;
+
+            .bottom-footer-container {
+                height: 80px;
+                background-color: aquamarine;
+
+                .bottom-footer-content {
+                    background-color: pink;
+                }
+            }
         }
     }
 }
@@ -161,7 +172,8 @@
 
 .top-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    border-bottom: 2px solid white;
 
     .top-left-footer {
         width: 25%;
@@ -173,6 +185,23 @@
 
         .top-right-footer-content {
             width: 25%;
+        }
+    }
+}
+
+.bottom-footer {
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: flex-end;
+
+    .bottom-footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bottom-footer-content {
+            padding: 5px;
         }
     }
 }
